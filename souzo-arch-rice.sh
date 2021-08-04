@@ -84,9 +84,9 @@ read -p "Deseja instalar interface gráfica? y|n -> " sinet
 case $sinet in
     n|N) ;;
     y|Y|s|S|*)
-        pacman -S --noconfirm xorg gnu-free-fonts nitrogen lxappearance zathura nnn firefox slock arc-gtk-theme arc-icon-theme 
+        pacman -S --noconfirm xorg gnu-free-fonts nitrogen lxappearance zathura nnn firefox slock arc-gtk-theme arc-icon-theme calcurse mpv alsa-utils pulseaudio flameshot
         #change 1366×768 for 1920x1080 if your screen accept this resolution
-        sudo -u $suser echo -e "setxkbmap br &\r\nnitrogen --restore &\r\nxrandr --output eDP1 --mode 1366×768 &" > ~/.xprofile
+        sudo -u $suser echo -e "setxkbmap br &\r\nnitrogen --restore &\r\nxrandr --output eDP1 --mode 1366×768 &\r\n" > ~/.xprofile
         mkdir /usr/share/xsessions
         echo -e "[Desktop Entry]\r\nEncoding=UTF-8\r\nName=Dwm\r\nComment=Dynamic Window Manager\r\nExec=dwm\r\nIcon=dwm\r\nType=XSession" > /usr/share/xsessions/dwm.desktop
         sudo -u $suser bash -c "curl https://vda789.github.io/souzo-arch-rice2.sh | sh"
