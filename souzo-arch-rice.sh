@@ -1,5 +1,5 @@
 echo "Iniciando a pós instalacao do arch linux..."
-if[ $EUID -ne 0 ]
+if [ $EUID -ne 0 ]
     then echo "Error... Run as root"
     exit
 fi
