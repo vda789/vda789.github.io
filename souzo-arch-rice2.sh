@@ -28,4 +28,4 @@ sudo systemctl enable ly
 
 #vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl https://vda789.github.io/.vimrc >> ~/.vimrc
+curl https://github.com/vda789/vda789.github.io/blob/main/.vimrc > ~/.vimrc
