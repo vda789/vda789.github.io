@@ -68,3 +68,4 @@ curl https://vda789.github.io/souzo-arch-rice2.sh >> /home/souzo/userconf.sh
 curl https://blackarch.org/strap.sh >> /root/blackarch.sh
 
 locale-gen
+pacman -S ttf-font-awesome
