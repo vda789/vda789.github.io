@@ -68,4 +68,8 @@ curl https://vda789.github.io/souzo-arch-rice2.sh >> /home/souzo/userconf.sh
 curl https://blackarch.org/strap.sh >> /root/blackarch.sh
 
 locale-gen
-pacman -S ttf-font-awesome
+pacman -S ttf-font-awesome picom
+
+echo "Depois da instalacao execute o script em /root/arch.sh e como usuario comum em /home/souzo/userconf.sh :)"
+echo "Caso voce tenha mais de um monitor dê uma olhada em xrand, para adicionar outro, edite o arquivo .xprofile"
+echo "Digite passwd USUARIO e depois passwd root para poder setar as senhas de usuario e root"
