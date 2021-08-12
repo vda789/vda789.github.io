@@ -34,7 +34,7 @@ useradd -m -g users -G wheel,storage,power souzo
 echo "Configurando ambiente wifi"
 pacman --noconfirm -S iwd
 mkdir /etc/iwd
-echo -e "[General]\r\nEnableNetworkConfiguration=true\r\n" > /etc/iwd/main.conf
+echo -e "[General]\nEnableNetworkConfiguration=true\n" > /etc/iwd/main.conf
 #echo -e "[Settings]\r\nAutoConnect=true" >> /var/lib/iwd/spaceship.psk
 
 systemctl enable NetworkManager
