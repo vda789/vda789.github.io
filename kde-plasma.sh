@@ -6,7 +6,7 @@ fi
 
 #installation core
 echo "Instalando e configurando recursos"
-pacman --noconfirm -Sy sudo vim curl git wget base-devel sddm grub networkmanager pulseaudio-alsa pulseaudio alsa-utils alsa-lib alsa-firmware alsa-plugins flameshot xf86-video-intel libgl mesa plasma kde-applications xorg xorg-xinit
+pacman --noconfirm -Sy efibootmgr sudo vim curl git wget base-devel sddm grub networkmanager pulseaudio-alsa pulseaudio alsa-utils alsa-lib alsa-firmware alsa-plugins flameshot xf86-video-intel libgl mesa plasma kde-applications xorg xorg-xinit
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 #host
