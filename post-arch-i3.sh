@@ -53,7 +53,7 @@ passwd souzo
 
 
 locale-gen
-mkinitcpio -P
+mkinitcpio -p linux
 
 echo -e "caso encrypt disk, /etc/default/grub grub_cmdline_linux=cryptdevice=UUID=PASTEUUID:cryptroot root=/dev/mapper/cryptroot"
 
